@@ -1,0 +1,72 @@
+.imported-backups
+models
+*.sh
+env-*
+*.tar.gz
+generated/
+.venv
+
+
+# === Python bytecode ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === Virtual environments ===
+venv/
+env/
+.venv/
+.env/
+
+# === Environment variables ===
+*.env
+.env.*
+
+# === VSCode / IDEs ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === Mac & OS-specific ===
+.DS_Store
+Thumbs.db
+
+# === Logs & temp files ===
+*.log
+*.tmp
+
+# === Unit test / coverage ===
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# === Build artifacts ===
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# === Database files ===
+*.sqlite3
+*.db
+
+# === Frontend (if full-stack) ===
+node_modules/
+npm-debug.log
+yarn.lock
+build/
+dist/
+*.lock
+
+# === FastAPI or Flask static/assets ===
+staticfiles/
+static/
+media/
+
+# === Docker ===
+*.pid
+docker-compose.override.yml
