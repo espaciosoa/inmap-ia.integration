@@ -384,14 +384,6 @@ def estimar_mapa_endpoint(params: MapEstimationParams):
         print(f"Error durante la estimación del mapa: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@router.get("/mapa-json/{room_name}")
-def get_mapa(room_name: str):
-    try:
-        file_path = f"generated/{room_name}/{room_name}_estimado.npy"
-        array = np.load(file_path)
-        return {"map": array.tolist()}
-    except FileNotFoundError:
-        return {"error": f"No se encontró el mapa estimado para '{room_name}'"}
 
 def extraer_dbm_de_mapa(mapa_path: str, limit=10.0, step=0.5):
     mapa = np.load(mapa_path)

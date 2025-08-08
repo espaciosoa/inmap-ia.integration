@@ -23,7 +23,7 @@ from db import rooms, measurements, jobs
 from utils.ImageUtils import bounding_box_2d , numpy_array_to_base64_image
 from utils.listComprehensions import serialize_doc, getJustCoords,getValueAndCoords, normalize_dbm
 from math import ceil
-
+# I think all of this file is deprecated, but I leave it here for now
 
 
 import sys
